@@ -16,7 +16,7 @@ services:
        environment: #variables de entorno#
          WORDPRESS_DB_HOST: mysql
          WORDPRESS_DB_USER: root
-         WORDPRESS_DB_PASSWORD: ${USER_PASSWROD}
+         WORDPRESS_DB_PASSWORD: ${USER_PASSWORD}
          WORDPRESS_DB_NAME: wordpress
        volumes:
           - wordpress:/var/www/html
