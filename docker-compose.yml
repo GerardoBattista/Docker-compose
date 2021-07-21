@@ -26,6 +26,8 @@ services:
        environment:
          MYSQL_DATABASE: wordpress
          MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD}
+         MYSQL_USER: ${USER_NAME:-wordpress}
+         MYSQL_PASSWORD: ${USER_PASSWORD}
        volumes:
          - mysql:/var/lib/mysql
   phpmyadmin:
